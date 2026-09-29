@@ -408,21 +408,6 @@ is kept separate from the ambiguity specification. Consequently, conditional on 
 
 ---
 
-## Citation
-
-If you use this repository in academic work, please cite the accompanying paper:
-
-```bibtex
-@article{PokouSadefoInformationAdaptive,
-  title   = {Information-Adaptive Latent Distributional Robustness for Climate-Transition Portfolio Choice},
-  author  = {Pokou, Fr{\'e}dy and Sadefo Kamdem, Jules},
-  note    = {Manuscript}
-}
-```
-
-The bibliographic record should be updated with the journal, year, volume, pages, and DOI once these become available.
-
----
 
 ## Authors
 
