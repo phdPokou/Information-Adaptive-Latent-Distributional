@@ -1,0 +1,23 @@
+2026-09-23 11:59:31 | INFO | Section 4 controlled simulation V5 started
+2026-09-23 11:59:31 | INFO | Device=cuda | CUDA available=True | torch=2.12.0+cu126
+2026-09-23 11:59:31 | INFO | GPU=NVIDIA GeForce RTX 3060 Laptop GPU
+2026-09-23 11:59:31 | INFO | Design invariant: Gamma(s) is decision independent; no Gamma(s,C(x)) is implemented.
+2026-09-23 11:59:31 | INFO | [EXP 1/6] Mechanism recovery: nominal-law and ambiguity-radius channels
+2026-09-23 16:55:19 | INFO | [EXP 2/6] Optimal-policy and transition-exposure comparative statics
+2026-09-23 19:06:06 | INFO | [EXP 3/6] Heterogeneous Green/Neutral/Brown portfolio responses
+2026-09-23 19:47:43 | INFO | [EXP 4/6] Value of State Conditioning and nested ablation
+2026-09-24 07:52:57 | INFO | [EXP 5/6] Structural misspecification boundary
+2026-09-24 12:12:00 | INFO | [EXP 6/6] Conditional-kernel robustness and signal contamination
+2026-09-24 14:14:05 | INFO | CHECK State-gradient MAE                     PASS | value=1.22462e-08 threshold=0.0025
+2026-09-24 14:14:05 | INFO | CHECK Policy derivative signal               PASS | value=0.00231364 threshold=0.0001
+2026-09-24 14:14:05 | INFO | CHECK Policy-derivative MAE                  PASS | value=1.85927e-05 threshold=0.015
+2026-09-24 14:14:05 | INFO | CHECK Policy-derivative relative MAE         PASS | value=0.00933104 threshold=0.1
+2026-09-24 14:14:05 | INFO | CHECK Max simplex error                      PASS | value=2.22045e-16 threshold=1e-08
+2026-09-24 14:14:05 | INFO | CHECK Max cap violation                      PASS | value=0 threshold=1e-08
+2026-09-24 14:14:05 | INFO | CHECK Portfolio solver convergence rate      PASS | value=1 threshold=0.95
+2026-09-24 14:14:05 | INFO | CHECK VoSC at zero heterogeneity             PASS | value=0 threshold=1e-05
+2026-09-24 14:14:05 | INFO | CHECK Minimum VoSC                           PASS | value=0 threshold=-1e-05
+2026-09-24 14:14:05 | INFO | CHECK Radial baseline CVaR error             PASS | value=0 threshold=1e-10
+2026-09-24 14:14:05 | INFO | CHECK Minimum decision regret                PASS | value=0 threshold=-2e-05
+2026-09-24 14:14:05 | INFO | Completed in 1574.56 minutes | diagnostics: 11 PASS, 0 FAIL
+2026-09-24 14:14:05 | INFO | Outputs organized in figures/, figure_csv/, tables/, seed_level/, diagnostics/, and config/ under C:\Users\fredy\Downloads\Results_Section4_V5_Full

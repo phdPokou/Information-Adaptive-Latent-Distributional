@@ -1,0 +1,66 @@
+parameter,value
+seeds,"[101, 202, 303, 404, 505, 606, 707, 808, 909, 1010, 1111, 1212, 1313, 1414, 1515, 1616, 1717, 1818, 1919, 2020, 2121, 2222, 2323, 2424, 2525, 2626, 2727, 2828, 2929, 3030]"
+dtype,float64
+use_cuda,True
+d,12
+n_group,4
+beta,0.95
+weight_cap,0.25
+exposure_green,0.2
+exposure_neutral,0.5
+exposure_brown,0.8
+n_state,21
+s_low,0.1
+s_medium,0.5
+s_high,0.9
+xi_m0,-0.18
+xi_a,0.35
+xi_sigma0,0.24
+xi_b,0.1
+gamma0,0.015
+gamma1,0.035
+gamma_static,0.0325
+annual_mu,0.06
+annual_vol,0.18
+group_mu_annual,"(0.045, 0.06, 0.082)"
+group_vol_annual,"(0.135, 0.18, 0.245)"
+corr_within,0.35
+corr_cross,0.18
+periods_per_year,12
+n_latent,4096
+n_eval,12000
+x_steps,280
+x_lr,0.055
+x_tol,2e-08
+x_patience,45
+x_restarts,2
+polish_steps,100
+kkt_tol,5e-06
+oracle_steps,900
+oracle_restarts,3
+inner_steps,180
+inner_lr,0.055
+inner_tol,2e-09
+inner_patience,35
+rho_floor,1e-05
+fd_h,0.002
+fd_h_grid,"(0.01, 0.005, 0.002, 0.001)"
+kappa_grid,"[0.0, 0.25, 0.5, 0.75, 1.0]"
+pi_balanced,"[0.3333333333333333, 0.3333333333333333, 0.3333333333333333]"
+pi_low,"[0.6, 0.3, 0.1]"
+pi_high,"[0.1, 0.3, 0.6]"
+mean_shift,0.0014999999999999998
+corr_shift_max,0.28
+misspec_intensity,"[0.0, 0.25, 0.5, 0.75, 1.0]"
+student_nu,"[15, 8, 5]"
+contamination_grid,"[0.0, 0.15, 0.3, 0.45, 0.6, 0.75, 0.9, 1.0]"
+pass_grad_mae,0.0025
+pass_policy_deriv_mae,0.015
+pass_policy_deriv_rel_mae,0.1
+min_policy_deriv_signal,0.0001
+pass_simplex_error,1e-08
+pass_cap_error,1e-08
+pass_solver_rate,0.95
+pass_vosc_zero_tol,1e-05
+pass_regret_tol,2e-05
+dpi,320

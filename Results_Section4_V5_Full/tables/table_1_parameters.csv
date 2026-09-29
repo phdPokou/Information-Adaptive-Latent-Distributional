@@ -1,0 +1,20 @@
+Category,Parameter,Configuration,Role,Varied_in_robustness
+DGP,Portfolio dimension d,12,Common universe,No
+DGP,State grid size,21,Comparative statics,No
+DGP,Latent family,LogNormal,q_{Phi(s)},Yes
+DGP,xi_m0,-0.18,Latent center,Yes
+DGP,xi_a,0.35,State slope of latent center,Yes
+DGP,xi_sigma0,0.24,Latent dispersion,Yes
+DGP,xi_b,0.1,State slope of latent dispersion,Yes
+Decision,CVaR beta,0.95,Tail probability level,No
+Decision,Gamma(s),0.015+0.035 s,Decision-independent KL radius,Yes
+Decision,Weight cap,0.25,Feasible set,No
+Decision,Exposure scores,"G=0.2, N=0.5, B=0.8",C(x)=c'x,No
+Numerical,Independent seeds,30,Replicated paired evaluation,No
+Numerical,Latent CRN draws,4096,Variational expectation,No
+Numerical,Evaluation draws,12000,True-DGP evaluation,No
+Numerical,Outer steps,280,Portfolio optimization,No
+Numerical,Inner steps,180,alpha/rho optimization,No
+Numerical,Finite-difference h,0.002,Derivative audit,Yes
+Numerical,dtype,float64,Numerical precision,No
+Numerical,device,cuda,Compute backend,No

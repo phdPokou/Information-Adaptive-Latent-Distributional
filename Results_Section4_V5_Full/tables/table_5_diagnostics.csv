@@ -1,0 +1,15 @@
+Check,Value,Threshold,Rule,Status,Interpretation
+State-gradient MAE,1.2246176377408142e-08,0.0025,le,PASS,Analytical decomposition vs central finite difference
+State-gradient RMSE,4.4880497207027476e-07,,audit,AUDIT,Supplementary derivative-recovery metric
+State-gradient max abs error,2.2470968558244153e-05,,audit,AUDIT,Worst derivative-recovery discrepancy
+State-gradient R2,0.9999999964235793,,audit,AUDIT,Agreement of analytical and finite-difference derivatives
+Policy derivative signal,0.0023136426357423423,0.0001,ge,PASS,Comparative-static experiment must excite a non-degenerate policy response
+Policy-derivative MAE,1.8592745431733573e-05,0.015,le,PASS,Theorem 3.4 evaluated only where box constraints are inactive
+Policy-derivative relative MAE,0.00933103768478093,0.1,le,PASS,Scale-free analytical versus finite-difference policy sensitivity
+Max simplex error,2.220446049250313e-16,1e-08,le,PASS,Budget feasibility
+Max cap violation,0.0,1e-08,le,PASS,Upper-bound feasibility
+Portfolio solver convergence rate,1.0,0.95,ge,PASS,Reduced joint KKT residual plus feasibility
+VoSC at zero heterogeneity,0.0,1e-05,le,PASS,Zero-heterogeneity numerical identity
+Minimum VoSC,0.0,-1e-05,ge,PASS,V_static >= V_state up to optimization tolerance
+Radial baseline CVaR error,0.0,1e-10,le,PASS,Correctly specified radial DGP under common random numbers
+Minimum decision regret,0.0,-2e-05,ge,PASS,Oracle dominance up to Monte Carlo/optimization tolerance
