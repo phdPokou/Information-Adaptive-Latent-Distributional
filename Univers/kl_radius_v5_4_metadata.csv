@@ -1,0 +1,16 @@
+item,value
+method,recursive circular moving-block bootstrap KL calibration
+calendar_source,exact intersection of Universe_A_log_returns.csv and Universe_B_log_returns.csv
+decision_rule,tau_0 = first jointly bootstrap-calibratable common date; tau_{k+1} = 20th common trading day after tau_k
+H_rebalance,20
+bootstrap_replications,500
+bootstrap_block_length,20
+baseline_radius,95th percentile of D_KL(q_boot || q_nominal)
+bandwidth,0.15
+minimum_history,120
+minimum_effective_n,30.0
+random_seed,20260926 + YYYYMMDD + universe offset; deterministic per date
+KL_direction,bootstrap || nominal
+test_tuning,none
+portfolio_performance,never used
+interpretation,bootstrap-calibrated estimation-uncertainty radius; not exact finite-sample coverage theorem
